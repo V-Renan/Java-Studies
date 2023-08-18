@@ -1,4 +1,4 @@
-package Modulo07;
+package br.com.victor.Modulo07;
 
 
 public class PrimeiraClasse {
