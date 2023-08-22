@@ -1,5 +1,6 @@
 package br.com.victor.Modulo08;
 
+
 /**
  * @author Victor$
  * @date 19/08/2023$
@@ -12,6 +13,17 @@ public class Operadores {
         operacoesAtribuicoes();
         operacoesIncrementoDecremento();
         operacoesRelacionais();
+
+        calcularMedia();
+    }
+
+    public static void calcularMedia() {
+        double n1 = 9;
+        double n2 = 7;
+        double n3 = 5;
+        double n4 = 10;
+        double media = (n1 + n2 + n3 + n4) / 4;
+        System.out.println("A média final é: " + media);
     }
 
     public static void operacoesRelacionais() {
@@ -40,7 +52,7 @@ public class Operadores {
         System.out.println("isNot: " + !isNot);
     }
 
-    private static void operacoesAtribuicoes() {
+    public static void operacoesAtribuicoes() {
         System.out.println("**** operacoesAtribuicoes ****");
         int num1 = 10;
         int num2 = 10;
@@ -50,6 +62,8 @@ public class Operadores {
         System.out.println(num3);
 
     }
+
+
 
     public static void operacoesIncrementoDecremento() {
         System.out.println("**** operacoesIncrementoDecremento ****");
