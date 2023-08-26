@@ -1,4 +1,4 @@
-package br.com.victor.Modulo11;
+package br.com.victor.Modulo11.array;
 
 import java.util.Scanner;
 
