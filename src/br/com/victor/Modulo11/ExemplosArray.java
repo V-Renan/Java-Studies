@@ -19,10 +19,9 @@ public class ExemplosArray {
     private static void novoArray() {
         System.out.println("****** novoArray ******");
         String[] nomes = new String[4];
-        nomes[0] = "Rodrigo";
-        nomes[1] = "Pires";
-        nomes[2] = "Pires2";
-        nomes[3] = "Pires3";
+        nomes[0] = "Victor";
+        nomes[1] = "Renan";
+
         for (String nome : nomes) {
             System.out.println(nome);
         }
