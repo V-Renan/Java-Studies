@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class ExemploLinkedHashMap {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         exemploListaSimples();
     }
 
@@ -25,6 +25,6 @@ public class ExemploLinkedHashMap {
         lista.put(3, "Lúcia Ferreira");
 
         System.out.println(lista);
-        System.out.println("");
+        System.out.println(" ");
     }
 }

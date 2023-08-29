@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class ExemploHashMap {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         exemploListaSimples();
         exemploListaSimplesIterandoValores();
         exemploListaSimplesIterandoChaves();
@@ -29,22 +29,23 @@ public class ExemploHashMap {
         lista.put(4, "João da Silva");
 
         System.out.println("***** for comun *****");
-        Set<Map.Entry<Integer, String>> entry = lista.entrySet();
+        Set<Map.Entry<Integer, String>> entry = lista.entrySet();  //Pega a chave e o valor de uma vez só.
         for (Map.Entry<Integer, String> e : entry) {
             System.out.println("Chave: " + e.getKey());
             System.out.println("Valor: " + e.getValue());
         }
 
+        
         System.out.println("***** forEach stram *****");
         lista.entrySet().forEach(e -> {
             System.out.println("Chave: " + e.getKey());
             System.out.println("Valor: " + e.getValue());
         });
 
-        System.out.println("***** forEach stream 1 *****");
+        System.out.println("***** forEach stream 1 [chaves]*****");
         lista.keySet().stream().forEach(System.out::println);
 
-        System.out.println("***** forEach stream 2 *****");
+        System.out.println("***** forEach stream 2 [valores]*****");
         lista.values().stream().forEach(System.out::println);
 
         System.out.println("***** forEach stream 3 *****");
