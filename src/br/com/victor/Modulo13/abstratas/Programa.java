@@ -14,7 +14,7 @@ public class Programa {
         empregado.setNome("Renan1");
         empregado.setSobrenome("Moura");
         empregado.setSalario(100d);
-        System.out.println(empregado.getNome() + " tem salário: R$" + empregado.vencimento());
+        imprimir(empregado);
 
         Comissionado comissionado = new Comissionado();
         comissionado.setCpf("2");
@@ -22,7 +22,7 @@ public class Programa {
         comissionado.setSobrenome("Moura");
         comissionado.setTotalVenda(2000d);
         comissionado.setTaxaComissao(0.1d);
-        System.out.println(comissionado.getNome() + " tem salário: R$" + comissionado.vencimento());
+        imprimir(comissionado);
 
         Horista horista = new Horista();
         horista.setCpf("3");
@@ -30,7 +30,20 @@ public class Programa {
         horista.setSobrenome("Moura");
         horista.setPrecoHora(6d);
         horista.setHorasTrabalhadas(166d);
-        System.out.println(horista.getNome() + " tem salário: R$" + horista.vencimento());
+        imprimir(horista);
 
     }
+
+    public static void imprimir(Empregado empregado) {
+        if (empregado instanceof Horista) {
+            Horista hor = (Horista) empregado;
+            System.out.println(hor.getPrecoHora());
+        }
+        System.out.println(empregado.getNome() + " Tem salário: R$" + empregado.vencimento());
+
+        empregado.imprimirSobrenome();
+        empregado.imprimirValor();
+    }
+
+
 }
