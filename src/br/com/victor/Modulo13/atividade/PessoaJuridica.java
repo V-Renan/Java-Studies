@@ -37,12 +37,4 @@ public class PessoaJuridica extends Pessoa{
         this.herancaEmpresarial = herancaEmpresarial;
     }
 
-    @Override
-    public String toString() {
-        return "PessoaJuridica{" +
-                "cnpj='" + cnpj + '\'' +
-                ", impostosEmpresariais=" + impostosEmpresariais +
-                ", herancaEmpresarial=" + herancaEmpresarial +
-                '}';
-    }
 }

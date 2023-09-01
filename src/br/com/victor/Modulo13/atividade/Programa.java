@@ -35,7 +35,6 @@ public class Programa {
         System.out.println("CNPJ: " + pj.getCnpj());
         System.out.println("Herança Empresarial: R$" + pj.getHerancaEmpresarial());
         System.out.println("Impostos Empreseraiais: R$" + pj.getImpostosEmpresariais());
-
     }
 
     public static void imprimirpf(PessoaFisica pf) {
