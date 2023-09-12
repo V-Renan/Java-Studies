@@ -27,3 +27,13 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/br/com/victor/CadastroClienteSwing/nbproject/private/
+/src/br/com/victor/CadastroSwing/nbproject/private/
+/src/br/com/victor/CadastroSwing/CadastroClienteSwing/nbproject/private/
+/src/br/com/victor/CadastroSwing/domain/nbproject/private/
+/src/br/com/victor/CadastroSwing/CadastroClienteSwing/build/
+/src/br/com/victor/CadastroClienteSwing/build/
+/src/br/com/victor/JavaApplication1/nbproject/private/
+/src/br/com/victor/teste/CadastroClienteSwing/build/
+/src/br/com/victor/teste/CadastroClienteSwing/nbproject/private/
+/src/br/com/victor/teste/JavaApplication1/nbproject/private/

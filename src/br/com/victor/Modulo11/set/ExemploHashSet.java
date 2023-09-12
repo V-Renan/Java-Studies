@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class ExemploHashSet {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         exemploListaSimples();
         exemploListaSimplesOrdemAscendente();
         exemploNovo();

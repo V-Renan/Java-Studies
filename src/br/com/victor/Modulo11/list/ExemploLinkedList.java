@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class ExemploLinkedList {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         exemploListaSimples();
         exemploListaSimplesOrdemAscendente();
     }
@@ -27,15 +27,21 @@ public class ExemploLinkedList {
 
         lista.remove(1);
         System.out.println(lista);
-        boolean contem = lista.contains("João da Silva");
-        System.out.println(contem);
+        boolean contem = lista.contains("Antonio Sousa");
+        if (!contem) {
+            System.out.println("Aluno não encontrado!");
+        } else {
+            System.out.println("Aluno encontrado!");
+        }
+
+        System.out.println("--------------------------------------------------------");
 
         //System.out.println(lista.get(0));
 
         for (String nome : lista) {
             System.out.println(nome);
         }
-        System.out.println("");
+        System.out.println("Imprimindo objeto especifico da lista");
 
         System.out.println(lista.get(0));
     }

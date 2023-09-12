@@ -55,29 +55,17 @@ public class Aluno implements Comparable<Aluno>{
         this.sala = sala;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Aluno{" +
-//                "nome='" + nome + '\'' +
-//                ", curso='" + curso + '\'' +
-//                ", nota=" + nota +
-//                ", sala='" + sala + '\'' +
-//                '}';
-//    }
-
     /**
      * Usado para converter o objeto em String
      *
      * @return
      */
+
+    @Override
     public String toString() {
-        return this.nome;
+        return "nome: " + nome +
+                " | curso: " + curso;
     }
-
-    public String toCurso() {
-        return this.curso;
-    }
-
 
     /**
      * Usado para comparação entre objetos e verificar se o mesmo é igual

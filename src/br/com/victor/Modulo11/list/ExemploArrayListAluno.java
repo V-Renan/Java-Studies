@@ -12,9 +12,10 @@ import java.util.List;
  */
 public class ExemploArrayListAluno {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         exemploListaSimplesOrdenadaComparatorAluno();
         exemploListaSimplesOrdenadaClasseExterna();
+        exemploListaSolo();
     }
 
     private static void exemploListaSimplesOrdenadaClasseExterna() {
@@ -47,13 +48,13 @@ public class ExemploArrayListAluno {
         lista.add(b);
         lista.add(c);
         lista.add(d);
-        System.out.println("Lista sem ordenação" + lista);
-        //Collections.sort(lista);
-        System.out.println("Lista com ordenação" + lista);
+        System.out.println("Lista sem ordenação ---- " + lista);
+        Collections.sort(lista);
+        System.out.println("Lista com ordenação ---- " + lista);
 
         ComparaNotaAluno comparaNotaAluno = new ComparaNotaAluno();
         Collections.sort(lista, comparaNotaAluno);
-        System.out.println("Lista com ordenação por nota" + lista);
+        System.out.println("Lista com ordenação por nota ---- " + lista);
 
         System.out.println("");
 
@@ -65,5 +66,17 @@ public class ExemploArrayListAluno {
 
         System.out.println();
         System.out.println("------------------------------------------------------------------------");
+    }
+
+    public static void exemploListaSolo() {
+        System.out.println("****** exemploListaSolo ******");
+        List<Aluno> lista = new ArrayList<Aluno>();
+
+        Aluno A = new Aluno("Victor Renan", "Engenharia de Software", 10);
+        Aluno B = new Aluno("Gizelle Batista", "Marketing Digital", 10);
+        lista.add(A);
+        lista.add(B);
+        Collections.sort(lista);
+        System.out.println(lista);
     }
 }

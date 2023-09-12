@@ -20,11 +20,11 @@ public class ExemploArrayList {
 
     public static void exemploNumeros() {
         System.out.println("****** exemploNumeros ******");
-        List<Integer> numeros = new ArrayList<>();
+        List<Integer> numeros = new ArrayList<Integer>();
+
         numeros.add(1);
         numeros.add(3);
         System.out.println(numeros);
-        System.out.println("");
 
     }
 

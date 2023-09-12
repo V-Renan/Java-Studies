@@ -12,7 +12,7 @@ import java.util.TreeSet;
  */
 public class TestesPerformanceSet {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Random r = new Random();
 
         HashSet<Aluno> hashSet = new HashSet<Aluno>();
