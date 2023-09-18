@@ -16,7 +16,8 @@ public class ClienteMapDAO implements IClienteDAO {
 
     private Map<Long, Cliente> map;
 
-    public ClienteMapDAO() { map = new TreeMap<>();
+    public ClienteMapDAO() {
+        map = new TreeMap<>();
         this.map = new HashMap<>();
     }
 

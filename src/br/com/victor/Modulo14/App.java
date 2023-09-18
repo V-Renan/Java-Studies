@@ -27,7 +27,7 @@ public class App {
                 sair();
             }
             opcao = JOptionPane.showInputDialog(null,
-                    "Opção inválida digite 1 para cadastro, 2 para consulta, 3 para cadastro, 4 para alteração ou 5 para sair",
+                    "Opção inválida digite 1 para cadastro, 2 para consulta, 3 para exclusão, 4 para alteração ou 5 para sair",
                     "Green dinner", JOptionPane.INFORMATION_MESSAGE);
         }
 
@@ -58,7 +58,7 @@ public class App {
             }
 
             opcao = JOptionPane.showInputDialog(null,
-                    "Digite 1 para cadastro, 2 para consulta, 3 para cadastro, 4 para alteração ou 5 para sair",
+                    "Digite 1 para cadastro, 2 para consulta, 3 para exclusão, 4 para alteração ou 5 para sair",
                     "Green dinner", JOptionPane.INFORMATION_MESSAGE);
 
         }
